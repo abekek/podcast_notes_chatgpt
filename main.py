@@ -33,6 +33,8 @@ if st.button('Get notes'):
             text.append(curr_text)
             curr_text = ""
             interval += 1
+        
+    text.append(curr_text)
 
     notes = ""
     prompt = f"Based on the following YouTube transcript provide a {5*bpm} bullet point summary in complete sentences:\n"
@@ -55,4 +57,3 @@ if st.button('Get notes'):
         st.write('Block ' + str(i+1) + '/' + str(len(text)) + ':')
         st.write(res_text)
         notes += res_text
-        
