@@ -7,11 +7,11 @@ st.header("Get podcast notes using AI")
 st.write('GitHub repo for this project: https://github.com/abekek/podcast_notes_chatgpt')
 
 # uncomment if want to use session token
-# session_token = st.text_input('Session token from ChatGPT')
+session_token = st.text_input('Session token from ChatGPT')
 
-st.write('Enter your ChatGPT credentials below. If you don\'t have an account, you can sign up for free at https://openai.com/blog/chatgpt/')
-email = st.text_input('Email')
-password = st.text_input('Password', type="password")
+# st.write('Enter your ChatGPT credentials below. If you don\'t have an account, you can sign up for free at https://openai.com/blog/chatgpt/')
+# email = st.text_input('Email')
+# password = st.text_input('Password', type="password")
 
 st.markdown("""---""")
 
@@ -22,11 +22,11 @@ bpm = st.slider('Choose # of bullet points/minute', 1, 5)
 if st.button('Get notes'):
     result = YouTubeTranscriptApi.get_transcript(yt_id)
 
-    api = ChatGPT(auth_type='openai', email=email, password=password, twocaptcha_apikey='2captcha_apikey',
-                    verbose=True)  # auth with email and password
+    # api = ChatGPT(auth_type='openai', email=email, password=password, twocaptcha_apikey='2captcha_apikey',
+    #                 verbose=True)  # auth with email and password
 
     # uncomment if want to use session token
-    # api = ChatGPT(session_token)
+    api = ChatGPT(session_token)
 
     curr_time = 0
     interval = 1
