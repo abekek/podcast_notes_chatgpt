@@ -1,2 +1,2 @@
 xvfb
-chromium-browser
+chromium
