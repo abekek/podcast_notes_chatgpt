@@ -48,7 +48,7 @@ if st.button('Get notes'):
             interval += 1
 
     notes = ""
-    prompt = f"Based on the following YouTube transcript provide a {5*bpm} bullet point summary in complete sentences. Summary:\n"
+    prompt = f"Based on the following YouTube transcript provide a {5*bpm} bullet point summary in complete sentences:\n"
 
     st.write('Number of note blocks: ' + str(len(text)))
 
@@ -57,7 +57,7 @@ if st.button('Get notes'):
         # res = api.send_message(prompt + text[i])['message'] + "\n"
         res = openai.Completion.create(
             model="text-davinci-003",
-            prompt=prompt + text[i],
+            prompt=prompt + text[i] + '\nSummary:\n',
             temperature=0.6,
             max_tokens=576,
             top_p=1,
