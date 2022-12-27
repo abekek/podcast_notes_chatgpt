@@ -22,7 +22,8 @@ bpm = st.slider('Choose # of bullet points/minute', 1, 5)
 if st.button('Get notes'):
     result = YouTubeTranscriptApi.get_transcript(yt_id)
 
-    api = ChatGPT(auth_type='openai', email=email, password=password)  # auth with email and password
+    api = ChatGPT(auth_type='openai', email=email, password=password, twocaptcha_apikey='2captcha_apikey',
+                    verbose=True)  # auth with email and password
 
     # uncomment if want to use session token
     # api = ChatGPT(session_token)
