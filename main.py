@@ -63,10 +63,11 @@ if st.button('Get notes'):
             top_p=1,
             frequency_penalty=1,
             presence_penalty=1
-        )['choices']['text'] + "\n"
+        )
+        res_text = res['choices'][0]['text']
         st.write('Block ' + str(i+1) + '/' + str(len(text)) + ':')
-        st.write(res)
-        notes += res
+        st.write(res_text)
+        notes += res_text
 
     # api.reset_conversation()  # reset the conversation
     # api.refresh_chat_page()  # refresh the chat page
