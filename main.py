@@ -63,7 +63,7 @@ if st.button('Get notes'):
             top_p=1,
             frequency_penalty=1,
             presence_penalty=1
-        ) + "\n"
+        )['text'] + "\n"
         st.write('Block ' + str(i+1) + '/' + str(len(text)) + ':')
         st.write(res)
         notes += res
