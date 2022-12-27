@@ -1,6 +1,10 @@
 import streamlit as st
 from pyChatGPT import ChatGPT
 from youtube_transcript_api import YouTubeTranscriptApi
+from selenium_profiles.utils.installer import install_chromedriver
+
+# st.info('Installing chromedriver... (this may take a few minutes)')
+install_chromedriver()
 
 st.header("Get podcast notes using AI")
 
