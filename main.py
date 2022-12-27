@@ -4,6 +4,8 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 st.header("Get podcast notes using AI")
 
+st.write('GitHub repo for this project: https://github.com/abekek/podcast_notes_chatgpt')
+
 # uncomment if want to use session token
 # session_token = st.text_input('Session token from ChatGPT')
 
