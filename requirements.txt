@@ -6,3 +6,4 @@ TwoCaptcha==0.0.1
 selenium_profiles==2.2.4
 python-dotenv==0.21.0
 openai==0.25.0
+protobuf==3.20.*
