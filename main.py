@@ -1,5 +1,4 @@
 import streamlit as st
-from pyChatGPT import ChatGPT
 from youtube_transcript_api import YouTubeTranscriptApi
 import os
 import openai
