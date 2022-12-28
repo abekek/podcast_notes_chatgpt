@@ -8,7 +8,7 @@ Due to unavailability of ChatGPT's official API, the workaround [pyChatGPT](http
 
 ## Demo (GPT-3 Note Creator)
 
-Link to the demo: [https://abekek-podcast-notes-chatgpt-main-5tfwph.streamlit.app/](https://abekek-podcast-notes-chatgpt-main-5tfwph.streamlit.app/)
+Link to the demo: [https://podcast-notes-gpt.streamlit.app/](https://podcast-notes-gpt.streamlit.app/)
 
 ## Demo (ChatGPT Note Creator)
 
