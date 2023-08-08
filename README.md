@@ -16,3 +16,10 @@ Link to the demo: [https://podcast-notes-gpt.streamlit.app/](https://podcast-not
 2. Install the requirements
 3. Run the script using `streamlit run mainChatGPT.py`
 4. Go to `localhost:8501` on your browser
+
+## To run using Docker:
+
+1. Make sure that Docker is [installed](https://docs.docker.com/engine/install/) into your system.
+2. Run ```docker build -t podcast .``` in the project main directory to build the image of project
+3. Finally, to run the built image, run ```docker run -d -p 8501:8501 --name pylint podcast```
+4. Go to `localhost:8501` in your browser.
